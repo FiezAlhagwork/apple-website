@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { hightlightsSlides } from "../constants";
 
 const VideoCarousle = () => {
@@ -15,6 +15,15 @@ const VideoCarousle = () => {
   });
 
   const { isEnd, startPlay, videoId, isLastVideo, isplaying } = video;
+
+   useEffect(() => {
+    
+  
+    return () => {
+      
+    }
+  }, [videoId , startPlay])
+  
   return (
     <>
       <div className="flex items-center">
