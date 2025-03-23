@@ -1,7 +1,7 @@
 import{useEffect, useState} from 'react'
 import { useGSAP } from '@gsap/react'
 import  gsap from 'gsap'
-import {smallHeroVideo , heroVideo} from "../utils"
+import {smallHeroVideo , heroVideo} from "../utils/index"
 const Hero = () => {
   const [VideoSrc, setVideoSrc] = useState(window.innerWidth < 760 ? smallHeroVideo : heroVideo )
 

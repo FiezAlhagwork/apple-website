@@ -22,7 +22,7 @@ const ModelView = ({
     <View
       index={index}
       id={gsapType}
-      className={` w-full h-full ${
+      className={` w-full h-full absolute  ${
         index === 2 ? " right-[-100%]" : ""
       } `}
     >
@@ -48,7 +48,7 @@ const ModelView = ({
             <Loader/>
           }
         >
-          <IPhone scale={index === 1 ? [15, 15, 15] : [17, 17, 17]} item={item} />
+          <IPhone scale={index === 1 ? [13, 13, 13] : [15, 15,15]} item={item} />
         </Suspense>
       </group>
     </View>
